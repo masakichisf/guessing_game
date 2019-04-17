@@ -1,23 +1,29 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>?</title>
     <meta name="description" content="Udemy JS practice with conditionals">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ADDED JS to html file <script type="text/javascript" src="guessing_game.js"></script> -->
     <style>
         body {
-            font-size: 25em;
             font-family: sans-serif;
-            font-weight: bold;
-            margin: 40px 100px;
+            margin: 75px auto;
             background: #1abc9c;
             color: yellow;
+            width: 50%;
         }
-
-        .pink {
-            color: blueviolet;
+        .lastResult {
+            color: rgba(255, 255, 255, 0.75);
+            font-weight: bold;
+            font-size: 3em;
+            margin: 0;
+        }
+        .hiOrLow {
+            color: rgba(255, 255, 255, 0.75);
+            font-weight: bold;
+            font-size: 1em;
+            margin: 0;
         }
 
     </style>
@@ -25,29 +31,26 @@
 </head>
 
 <body>
-
+ <header><h1>Number Guessing Game</h1></header>
+ <main>
+     <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.
+     </p>
+     <div class="form">
+         <label for "guessField">ENTER A GUESS:</label>
+         <input type="text" id="guessField" class="guessField">
+         <input type="submit" value="SUBMIT" class="guessSubmit">
+     </div>
+     
+     <div>
+         <p class="resultParas"></p>
+         <p class="guesses"></p>
+         <p class="lastResult"></p>
+         <p class="hiOrLow"></p>
+     </div>
+</main> 
 </body>
-<script>
-    //Create a secret number
-    var secretNumber = 4;
+<script type="text/javascript" src="guessing_game.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 
-    //Ask user for guess
-    var guess = Number(prompt("Guess a number"));
-
-    //Check if guess is secret number. Let the user know if correct.
-    if (guess === secretNumber) {
-        document.write("YOU GOT IT RIGHT!");
-    }
-
-    //If guess is not correct let the user know if it is higher
-    else if (guess > secretNumber) {
-        document.write("Too high. Too bad.");
-    }
-    //If guess is not correct let the user know if it is lower
-    else {
-        document.write("Too low. Too bad.");
-    }
-
-</script>
 
 </html>

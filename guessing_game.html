@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>?</title>
+    <meta name="description" content="Udemy JS practice with conditionals">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ADDED JS to html file <script type="text/javascript" src="guessing_game.js"></script> -->
+    <style>
+        body {
+            font-size: 25em;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin: 40px 100px;
+            background: #1abc9c;
+            color: yellow;
+        }
+
+        .pink {
+            color: blueviolet;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+</body>
+<script>
+    //Create a secret number
+    var secretNumber = 4;
+
+    //Ask user for guess
+    var guess = Number(prompt("Guess a number"));
+
+    //Check if guess is secret number. Let the user know if correct.
+    if (guess === secretNumber) {
+        document.write("YOU GOT IT RIGHT!");
+    }
+
+    //If guess is not correct let the user know if it is higher
+    else if (guess > secretNumber) {
+        document.write("Too high. Too bad.");
+    }
+    //If guess is not correct let the user know if it is lower
+    else {
+        document.write("Too low. Too bad.");
+    }
+
+</script>
+
+</html>

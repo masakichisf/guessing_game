@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>?</title>
+    <meta name="description" content="Udemy JS practice with conditionals">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 75px auto;
+            background: #1abc9c;
+            color: yellow;
+            width: 50%;
+        }
+        .lastResult {
+            color: rgba(255, 255, 255, 0.75);
+            font-weight: bold;
+            font-size: 3em;
+            margin: 0;
+        }
+        .hiOrLow {
+            color: rgba(255, 255, 255, 0.75);
+            font-weight: bold;
+            font-size: 1em;
+            margin: 0;
+        }
+
+    </style>
+
+</head>
+
+<body>
+ <header><h1>Number Guessing Game</h1></header>
+ <main>
+     <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.
+     </p>
+     <div class="form">
+         <label for "guessField">ENTER A GUESS:</label>
+         <input type="text" id="guessField" class="guessField">
+         <input type="submit" value="SUBMIT" class="guessSubmit">
+     </div>
+     
+     <div>
+         <p class="resultParas"></p>
+         <p class="guesses"></p>
+         <p class="lastResult"></p>
+         <p class="hiOrLow"></p>
+     </div>
+</main> 
+</body>
+<script type="text/javascript" src="./guessing_game.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
+
+</html>
